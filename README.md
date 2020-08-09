@@ -8,7 +8,7 @@
 
 ## :computer: Sobre o Projeto
 
-Proffy foi desenvolvido durante a #nlw2, e é uma aplicação que visa conectar alunos que estão procurando por aulas online a professores que querem dar essas aulas.
+**Proffy foi desenvolvido durante a #nlw2, e é uma aplicação que visa conectar alunos que estão procurando por aulas online a professores que querem dar essas aulas.**
 
 <p align="center">
    <img src=".github/proffy.svg"/>
@@ -103,12 +103,12 @@ $ expo install expo-font @expo-google-fonts/archivo @expo-google-fonts/poppins
 ## :rocket: Desafios
 
 No final do evento, a Rocketseat propôs uma série de desafios que poderão ser incrementados ao longo das 
-próximas semanas. Você pode conferir a lista dos desafios detalhadamente [nesta anotação do notion](https://www.notion.so/Vers-o-2-0-Proffy-eefca1b981694cd0a895613bc6235970), e acompanhar os desafios já concluídos [aqui](https://github.com/cunhaedu/ecoleta/challenges.md).
+próximas semanas. Você pode conferir a lista dos desafios detalhadamente [nesta anotação do notion](https://www.notion.so/Vers-o-2-0-Proffy-eefca1b981694cd0a895613bc6235970), e acompanhar os desafios já concluídos [aqui](https://github.com/cunhaedu/proffy/tree/master/challenges.md).
 
 ## :closed_book: Licença
 
 Released in 2020.
 
-Este projeto está sobre a [Licença MIT](https://github.com/cunhaedu/nlw/tree/master/LICENSE).
+Este projeto está sobre a [Licença MIT](https://github.com/cunhaedu/proffy/tree/master/LICENSE).
 
 Made by [Eduardo Assunção](https://github.com/cunhaedu)
