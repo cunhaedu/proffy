@@ -1,7 +1,11 @@
 import path from 'path'
 
+require('dotenv').config({
+  path: process.env.NODE_ENV === 'test' ? '.env.test' : '.env'
+})
+
 module.exports = {
-  client: 'sqlite3',
+  client: process.env.DB_CLIENT,
   connection: {
     filename: path.resolve(__dirname, 'src', 'database', 'database.sqlite')
   },

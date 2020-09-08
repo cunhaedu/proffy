@@ -36,15 +36,18 @@ export class ClassesController {
       .join('users', 'classes.user_id', '=', 'users.id')
       .select('classes.*', 'users.*')
 
+    const serializedClasses = classes.map(user => {
+      user.password = undefined
+      user.password_reset_token = undefined
+      user.password_reset_expires = undefined
+    })
+
     return res.json(classes)
   }
 
   async create (req: Request, res: Response) {
     const {
-      name,
-      avatar,
-      whatsapp,
-      bio,
+      user_id,
       subject,
       cost,
       schedule
@@ -53,15 +56,6 @@ export class ClassesController {
     const trx = await db.transaction()
 
     try {
-
-      const insertedUsersId = await trx('users').insert({
-        name,
-        avatar,
-        whatsapp,
-        bio
-      })
-
-      const user_id = insertedUsersId[0]
 
       const InsertedClassesIds = await trx('classes').insert({
         subject: String(subject),
