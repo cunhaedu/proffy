@@ -33,6 +33,8 @@ $ cd server
 # Instale as dependências
 $ yarn install
 
+# Crie um arquivo .env na raiz da pasta e coloque suas informações de acordo com o .env.example
+
 # Rode as migrations
 $ yarn knex:migrate
 
